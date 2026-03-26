@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Community Church</title>
+    <meta
+      name="description"
+      content="A bilingual church website with service times, prayer requests, and temple fund donations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark">GC</span>
+          <div>
+            <p class="brand-title" data-i18n="churchName">Grace Community Church</p>
+            <p class="brand-subtitle" data-i18n="churchTag">A welcoming place to grow in faith</p>
+          </div>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#services" data-i18n="navServices">Service Times</a>
+          <a href="#temple-fund" data-i18n="navFund">Temple Fund</a>
+          <a href="#prayer" data-i18n="navPrayer">Prayer Request</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+          <button class="language-toggle" type="button" aria-label="Switch language">
+            ES
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Welcome to our church family</p>
+            <h1 data-i18n="heroTitle">Growing in faith, serving with love, and building together</h1>
+            <p class="hero-text" data-i18n="heroText">
+              Join us for worship, prayer, and community as we share the hope of Christ in
+              English and Spanish.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#services" data-i18n="heroButtonPrimary">Plan Your Visit</a>
+              <a class="button secondary" href="#donate" data-i18n="heroButtonSecondary">Support the Temple Fund</a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="hero-card-label" data-i18n="heroCardLabel">This Week</p>
+            <h2 data-i18n="heroCardTitle">You are welcome here</h2>
+            <ul class="hero-list">
+              <li>
+                <span data-i18n="sundayLabel">Sunday Worship</span>
+                <strong data-i18n="sundayTime">10:00 AM</strong>
+              </li>
+              <li>
+                <span data-i18n="wednesdayLabel">Wednesday Prayer</span>
+                <strong data-i18n="wednesdayTime">7:00 PM</strong>
+              </li>
+              <li>
+                <span data-i18n="fridayLabel">Friday Bible Study</span>
+                <strong data-i18n="fridayTime">7:30 PM</strong>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container two-column">
+          <div>
+            <p class="section-tag" data-i18n="aboutTag">About Us</p>
+            <h2 data-i18n="aboutTitle">A local church with a heart for worship, prayer, and community</h2>
+          </div>
+          <div>
+            <p data-i18n="aboutText1">
+              We are a small bilingual church serving families, children, youth, and adults with
+              Christ-centered teaching and genuine care.
+            </p>
+            <p data-i18n="aboutText2">
+              Our goal is to make it easy for everyone to connect, receive support, and grow in
+              faith no matter which language they speak.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag" data-i18n="servicesTag">Service Times</p>
+            <h2 data-i18n="servicesTitle">Join us throughout the week</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <p class="service-day" data-i18n="sundayLabel">Sunday Worship</p>
+              <h3 data-i18n="sundayTime">10:00 AM</h3>
+              <p data-i18n="sundayDesc">Main worship service for the whole family.</p>
+            </article>
+            <article class="service-card">
+              <p class="service-day" data-i18n="wednesdayLabel">Wednesday Prayer</p>
+              <h3 data-i18n="wednesdayTime">7:00 PM</h3>
+              <p data-i18n="wednesdayDesc">Midweek prayer and encouragement.</p>
+            </article>
+            <article class="service-card">
+              <p class="service-day" data-i18n="fridayLabel">Friday Bible Study</p>
+              <h3 data-i18n="fridayTime">7:30 PM</h3>
+              <p data-i18n="fridayDesc">Bible study and fellowship for all ages.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="temple-fund">
+        <div class="container fund-layout">
+          <div>
+            <p class="section-tag" data-i18n="fundTag">Temple Fund</p>
+            <h2 data-i18n="fundTitle">Help us build a new temple for our growing church family</h2>
+            <p data-i18n="fundText">
+              Every gift helps us move closer to a permanent place for worship, ministry, and
+              community outreach.
+            </p>
+          </div>
+
+          <div class="fund-card">
+            <div class="fund-stats">
+              <div>
+                <span data-i18n="goalLabel">Goal</span>
+                <strong id="goal-amount">$50,000</strong>
+              </div>
+              <div>
+                <span data-i18n="raisedLabel">Raised</span>
+                <strong id="raised-amount">$18,500</strong>
+              </div>
+            </div>
+
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="37"
+              aria-label="Fundraising progress"
+            >
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <p class="progress-text" id="progress-text">37% of the goal reached</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section donate-section" id="donate">
+        <div class="container donate-card">
+          <div>
+            <p class="section-tag" data-i18n="donateTag">Donate</p>
+            <h2 data-i18n="donateTitle">Give safely through an external donation page</h2>
+            <p data-i18n="donateText">
+              Use PayPal, Stripe, or another trusted platform. Replace the sample link below with
+              your church donation page.
+            </p>
+          </div>
+          <a
+            class="button primary"
+            id="donate-link"
+            href="https://www.paypal.com/donate/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="donateButton"
+            >Donate Now</a
+          >
+        </div>
+      </section>
+
+      <section class="section alt-section" id="prayer">
+        <div class="container form-layout">
+          <div>
+            <p class="section-tag" data-i18n="prayerTag">Prayer Request</p>
+            <h2 data-i18n="prayerTitle">Share your prayer request with us</h2>
+            <p data-i18n="prayerText">
+              This form is ready to connect to Formspree later. For now, it shows a safe
+              placeholder message and does not store data.
+            </p>
+          </div>
+
+          <form class="prayer-form" id="prayer-form" action="#" method="post">
+            <label for="name" data-i18n="formNameLabel">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
+
+            <label for="email" data-i18n="formEmailLabel">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+            <label for="request" data-i18n="formRequestLabel">Prayer Request</label>
+            <textarea
+              id="request"
+              name="request"
+              rows="5"
+              placeholder="How can we pray for you?"
+              required
+            ></textarea>
+
+            <button class="button primary" type="submit" data-i18n="formButton">Send Prayer Request</button>
+            <p class="form-note" data-i18n="formNote">
+              Later, replace the form action with your Formspree endpoint.
+            </p>
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <p class="section-tag" data-i18n="contactTag">Contact</p>
+            <h2 data-i18n="contactTitle">We would love to hear from you</h2>
+            <p data-i18n="contactText">
+              Update this section with your church address, phone number, and email so visitors can
+              contact you easily.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <p><strong data-i18n="addressLabel">Address:</strong> 123 Faith Street, Your City, ST 00000</p>
+            <p><strong data-i18n="phoneLabel">Phone:</strong> (555) 123-4567</p>
+            <p><strong data-i18n="emailLabel">Email:</strong> hello@yourchurch.org</p>
+            <div class="social-links">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footerText">
+          Grace Community Church. Sharing faith, hope, and love in English and Spanish.
+        </p>
+        <a href="#top" data-i18n="footerLink">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
